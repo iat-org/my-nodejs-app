@@ -17,7 +17,7 @@ phases:
     post_build:
         commands:
             - echo "we are in the post build phase"
-            reports:
+reports:
   php-reports:
     files:
       - "reports/php/*.xml"
