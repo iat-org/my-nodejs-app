@@ -17,4 +17,12 @@ phases:
     post_build:
         commands:
             - echo "we are in the post build phase"
-            
+            reports:
+  php-reports:
+    files:
+      - "reports/php/*.xml"
+    file-format: "JUNITXML"
+  nunit-reports:
+    files:
+      - "reports/nunit/*.xml"
+    file-format: "NUNITXML"
